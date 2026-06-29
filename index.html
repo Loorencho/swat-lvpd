@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVPD SWAT — Tactical Operations Division</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cod-grain" aria-hidden="true"></div>
+  <div class="cod-scanlines" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-badge neon-swat">SWAT</span>
+        <span class="nav__logo-text">LVPD</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#personnel">Состав</a></li>
+        <li><a href="#blacklist">Черный список</a></li>
+        <li><a href="#internship">Стажировка</a></li>
+        <li><a href="#arsenal">Арсенал</a></li>
+        <li><a href="#handbook">Справочник</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#codes">Коды</a></li>
+        <li><a href="#academy">Академия</a></li>
+        <li><a href="#manual">Мануал</a></li>
+        <li><a href="#roleplay">Отыгровки</a></li>
+        <li><a href="#orders">Ордера</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Main SWAT Card -->
+  <header class="hero" id="hero">
+    <div class="hero__media" aria-hidden="true">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster=""
+      >
+        <source src="assets/video/hero-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__bg"></div>
+    <div class="hero__vignette"></div>
+    <div class="hero__slash hero__slash--1"></div>
+    <div class="hero__slash hero__slash--2"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__badge">LAS VEGAS POLICE DEPARTMENT</div>
+      <p class="hero__pre">TACTICAL RESPONSE UNIT</p>
+      <h1 class="hero__title neon-swat hero__title--mega">SWAT</h1>
+      <p class="hero__title-sub">SPECIAL WEAPONS &amp; TACTICS</p>
+      <p class="hero__subtitle">Славься демократия <span class="neon-swat">SWAT</span>!</p>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">24</span>
+          <span class="hero__stat-label">Оперативников</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">156</span>
+          <span class="hero__stat-label">Операций / год</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">24/7</span>
+          <span class="hero__stat-label">Готовность</span>
+        </div>
+      </div>
+      <div class="hero__actions">
+        <a href="#academy" class="btn btn--primary">Подать заявку</a>
+        <a href="#manual" class="btn btn--outline">Мануал <span class="neon-swat">SWAT</span></a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Personnel -->
+  <section class="section" id="personnel">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">PERSONNEL</span>
+        <h2 class="section__title">Личный состав</h2>
+        <p class="section__desc">Иерархия подразделений и должностей SWAT LVPD</p>
+      </div>
+      <div class="org-chart">
+        <section class="org-block org-block--stack">
+          <header class="org-block__header">
+            <div class="org-block__title-box">
+              <h3 class="org-block__title">Управление OSO</h3>
+            </div>
+          </header>
+          <div class="org-block__cards">
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--1"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Укроп</h3>
+                  <p class="card__role">Директор OSO</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Danil Schwartz</dd>
+                  <dt>Позывной</dt>
+                  <dd>Укроп</dd>
+                  <dt>Звание</dt>
+                  <dd>Майор</dd>
+                  <dt>Должность</dt>
+                  <dd>Директор OSO</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="org-block org-block--grid">
+          <header class="org-block__header">
+            <div class="org-block__title-box">
+              <h3 class="org-block__title">Командование SWAT</h3>
+            </div>
+          </header>
+          <div class="org-block__cards">
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--2"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Бритва</h3>
+                  <p class="card__role">Командир SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Martini Branos</dd>
+                  <dt>Позывной</dt>
+                  <dd>Бритва</dd>
+                  <dt>Звание</dt>
+                  <dd>Прапорщик</dd>
+                  <dt>Должность</dt>
+                  <dd>Командир SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+                <p class="card__note">Следит за составом, осуществляет вербовку членов отряда.</p>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--3"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Калкин</h3>
+                  <p class="card__role">Зам. командира SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Culkin Schwartz</dd>
+                  <dt>Позывной</dt>
+                  <dd>Калкин</dd>
+                  <dt>Звание</dt>
+                  <dd>Мл.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Зам. командира SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+                <p class="card__note">Тренировки отдела, работа по ордерам, дисциплина.</p>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--personnel-vacant">
+              <div class="card__image card__image--4"></div>
+              <div class="card__body card__body--profile">
+                <h3 class="card__name">—</h3>
+                <p class="card__role">Зам. командира SWAT</p>
+                <span class="card__status card__status--leave">Вакантно</span>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--1"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Восток</h3>
+                  <p class="card__role">Инструктор SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Sergey Karat</dd>
+                  <dt>Позывной</dt>
+                  <dd>Восток</dd>
+                  <dt>Звание</dt>
+                  <dd>Ст.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Инструктор SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="org-block org-block--grid">
+          <header class="org-block__header">
+            <div class="org-block__title-box">
+              <h3 class="org-block__title">Оперативный состав</h3>
+            </div>
+          </header>
+          <div class="org-block__cards">
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--2"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Малой</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Alonso Montez</dd>
+                  <dt>Позывной</dt>
+                  <dd>Малой</dd>
+                  <dt>Звание</dt>
+                  <dd>Ст.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--3"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Сармат</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Denis MacTavish</dd>
+                  <dt>Позывной</dt>
+                  <dd>Сармат</dd>
+                  <dt>Звание</dt>
+                  <dd>Ст.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--4"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Вацок</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Akylbek Mamura</dd>
+                  <dt>Позывной</dt>
+                  <dd>Вацок</dd>
+                  <dt>Звание</dt>
+                  <dd>Мл.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--1"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Один</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Salvestro Suarrez</dd>
+                  <dt>Позывной</dt>
+                  <dd>Один</dd>
+                  <dt>Звание</dt>
+                  <dd>Ст.Прапорщик</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--leave">Не допущен</span></dd>
+                </dl>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--2"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Метла</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Miden Heydrich</dd>
+                  <dt>Позывной</dt>
+                  <dd>Метла</dd>
+                  <dt>Звание</dt>
+                  <dd>Мл.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--active">Активен</span></dd>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="org-block org-block--grid">
+          <header class="org-block__header">
+            <div class="org-block__title-box">
+              <h3 class="org-block__title">Резерв SWAT</h3>
+            </div>
+          </header>
+          <div class="org-block__cards">
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--3"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">Войз</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Maksim Shom</dd>
+                  <dt>Позывной</dt>
+                  <dd>Войз</dd>
+                  <dt>Звание</dt>
+                  <dd>Капитан</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--leave">Неактив</span></dd>
+                </dl>
+                <p class="card__note">Неактив 23.04–24.05. Резерв SWAT.</p>
+              </div>
+            </article>
+            <article class="card card--personnel card--profile card--accordion">
+              <button type="button" class="card__toggle" aria-expanded="false">
+                <div class="card__image card__image--4"></div>
+                <div class="card__body card__body--profile">
+                  <h3 class="card__name">?</h3>
+                  <p class="card__role">Оперативник SWAT</p>
+                  <span class="card__expand-hint">Подробнее</span>
+                </div>
+              </button>
+              <div class="card__details" hidden>
+                <dl class="card__meta">
+                  <dt>Имя, фамилия</dt>
+                  <dd>Rauf Falk</dd>
+                  <dt>Позывной</dt>
+                  <dd>?</dd>
+                  <dt>Звание</dt>
+                  <dd>Ст.Лейтенант</dd>
+                  <dt>Должность</dt>
+                  <dd>Оперативник SWAT</dd>
+                  <dt>Статус</dt>
+                  <dd><span class="card__status card__status--leave">Неактив</span></dd>
+                </dl>
+                <p class="card__note">Неактив 23.04–24.05. Резерв SWAT.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blacklist -->
+  <section class="section section--dark" id="blacklist">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">BLACKLIST</span>
+        <h2 class="section__title">Черный список</h2>
+        <p class="section__desc">Лица, занесённые в реестр с запретом на вступление и восстановление в SWAT LVPD</p>
+      </div>
+      <div class="blacklist-notice">
+        <span class="blacklist-notice__label">Основание для занесения</span>
+        <p class="blacklist-notice__text">Розжиг конфликтов внутри департамента / основание монополии отряда / угрозы слива состава / попытка подрыва мятежа в мэрии</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table data-table--blacklist">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Лицо</th>
+              <th>Решение</th>
+              <th>Примечание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mona Liza</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>2</td><td>Roks Tortyga</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>3</td><td>Warior Nelson</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>4</td><td>Rikuto Ueda</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>5</td><td>Jeremiah Stoun</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>6</td><td>Pablo Vichester</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>7</td><td>Martin Milson</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>8</td><td>Vlad Werber</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>9</td><td>Jason Statkham</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>10</td><td>Charles Edwards</td><td><span class="blacklist-badge">Без выхода</span></td><td>Также известен как Cosmos Edwards</td></tr>
+            <tr><td>11</td><td>Quincy Vandenreich</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>12</td><td>Dommenick Toretto</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+            <tr><td>13</td><td>William Rockstar</td><td><span class="blacklist-badge">Без выхода</span></td><td>Занесение в черный список</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section class="section" id="internship">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">INTERNSHIP</span>
+        <h2 class="section__title">Стажировка</h2>
+        <p class="section__desc">Учёт стажёров, программа экзаменов и итоговая аттестация SWAT</p>
+      </div>
+      <div class="internship-content">
+        <p class="internship-source">Источник: таблица личного состава SWAT — строки со статусом <strong>Recruit of SWAT</strong></p>
+        <div class="table-wrap">
+          <table class="data-table data-table--internship">
+            <thead>
+              <tr>
+                <th>№</th><th>Имя, Фамилия</th><th>Звание</th><th>Позывной</th><th>Личное дело</th><th>Должность</th><th>Выговор внутри отряда</th><th>Выговора</th><th>Предупреждения</th><th>Взятие УП</th><th>Дата последнего повышения</th><th>Дата срока на повышение</th><th>Допуск</th><th>Дата вербовки</th><th>Посещаемость</th><th>29.06</th><th>30.06</th><th>01.07</th><th>02.07</th><th>03.07</th><th>04.07</th><th>05.07</th><th>За неделю</th><th>Всего</th><th>Дата назначения на должность</th><th>Примечание</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>9</td>
+              <td>Hayato Matsuo</td>
+              <td>Ст.Лейтенант</td>
+              <td>Кедр</td>
+              <td>lvpd.gov</td>
+              <td>Recruit of SWAT</td>
+              <td>0/2</td>
+              <td>1/3</td>
+              <td>0/3</td>
+              <td>0/3</td>
+              <td>12.06.2026</td>
+              <td>26.06.2026</td>
+              <td class="internship-clearance internship-clearance--denied">Не допущен(а)</td>
+              <td>22.06.2026</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>22.06.2026</td>
+              <td>—</td>
+              <td class="internship-note">—</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Leonardo One</td>
+              <td>Капитан</td>
+              <td>Кедр</td>
+              <td>lvpd.gov</td>
+              <td>Recruit of SWAT</td>
+              <td>0/2</td>
+              <td>0/3</td>
+              <td>0/3</td>
+              <td>0/3</td>
+              <td>04.06.2026</td>
+              <td>18.06.2026</td>
+              <td class="internship-clearance internship-clearance--review">На усмотрение рук-ва</td>
+              <td>22.06.2026</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14</td>
+              <td>22.06.2026</td>
+              <td>—</td>
+              <td class="internship-note">—</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Loor Pikavit</td>
+              <td>Капитан</td>
+              <td>Осел</td>
+              <td>lvpd.gov</td>
+              <td>Recruit of SWAT</td>
+              <td>0/2</td>
+              <td>0/3</td>
+              <td>0/3</td>
+              <td>0/3</td>
+              <td>13.06.2026</td>
+              <td>27.06.2026</td>
+              <td class="internship-clearance internship-clearance--review">На усмотрение рук-ва</td>
+              <td>—</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>12</td>
+              <td>—</td>
+              <td>—</td>
+              <td class="internship-note">—</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="internship-legend">
+          <h3 class="internship-legend__title">Обозначения посещаемости</h3>
+          <ul class="internship-legend__list">
+            
+          </ul>
+        </div>
+        <div class="internship-program">
+          <h3 class="internship-program__title">Программа экзаменов и аттестации</h3>
+          <p class="internship-program__desc">Требования к сдаче стажировки SWAT LVPD</p>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">10/66</span>
+            <h4 class="exam-block__title">Остановка повышенного риска</h4>
+          </header>
+          <p class="exam-block__time">Время не ограничено</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Проведение процесса по траффик-стопу 10-66 и задержание ООП.</p>
+            <ul class="exam-list exam-list--allowed">
+              <li>Разрешено ознакомиться с информацией (регламент → полезные ссылки → 10-66)</li>
+              <li>Разрешается консультация от экзаменатора перед сдачей экзамена</li>
+            </ul>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Запрещается биндерство</span><strong>Пересдача (при 2-м использовании биндера — недопуск)</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>Нелогичные или неправильные действия</span><strong>Решение комиссии</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Если ничего не сделали</span><strong>Пересдача</strong></li>
+            </ul>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">ДС</span>
+            <h4 class="exam-block__title">Координация</h4>
+          </header>
+          <p class="exam-block__time">Время не ограничено</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Преследование экзаменатора на патрульном крузере Dodge (PS3 + ECG).</p>
+          <div class="exam-sub">
+            <h5 class="exam-sub__title">Наземная координация</h5>
+            <p class="exam-sub__desc">Тренер берёт на себя роль преступника, используя транспорт. Экзаменуемый преследует автомобиль нарушителя, координируя действия и сообщая о положении цели.</p>
+            <ul class="exam-list">
+              <li>Координация движения преследуемого Т/C (местонахождение, скорость, направление)</li>
+              <li>Уверенное управление автомобилем при манёврах и в условиях ограниченного пространства</li>
+            </ul>          </div>
+          <div class="exam-sub">
+            <h5 class="exam-sub__title">Воздушная координация</h5>
+            <p class="exam-sub__desc">Преследование вражеского вертолёта. Передача данных о положении цели и своём местоположении.</p>
+            <ul class="exam-list">
+              <li>Сохранять контроль над вертолётом</li>
+              <li>Координировать действия с учётом направления, высоты и окружающих ориентиров</li>
+              <li>Умение точно описывать ситуацию и местоположение</li>
+            </ul>          </div>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">БП</span>
+            <h4 class="exam-block__title">Боевая подготовка</h4>
+          </header>
+          
+          
+          <div class="exam-stage">
+            <h5 class="exam-stage__title">I этап — Теория</h5>
+            <p class="exam-stage__time">2 минуты на ответ</p>
+            <p class="exam-block__task">3 вопроса по тактике владения оружием (из оружейки LVPD).</p>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--pass"><span>3 правильных ответа</span><strong>Сдача</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>2 правильных ответа</span><strong>Решение комиссии</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>1 правильный ответ</span><strong>Пересдача</strong></li>
+            </ul>          </div>
+          <div class="exam-stage">
+            <h5 class="exam-stage__title">II этап — Дуэли</h5>
+            <p class="exam-stage__time">Время не ограничено</p>
+            <p class="exam-block__task">Дуэль с 2-мя экзаменаторами в секторе B-7 LVPD до 2 побед. Формат 1×2. Экзаменаторы без бронежилетов. Экзаменуемому не допускается надевать маску (нарушение — −1 балл).</p>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--pass"><span>2 победы</span><strong>Сдача</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>Ничья</span><strong>Решение комиссии</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>0 побед</span><strong>Пересдача</strong></li>
+            </ul>          </div>
+          <div class="exam-stage">
+            <h5 class="exam-stage__title">III этап</h5>
+            <p class="exam-stage__time">Время не ограничено</p>
+            <p class="exam-block__task">Дуэль с экзаменатором в секторе G-11 до 2 побед. Формат 1×1.</p>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--pass"><span>Победа</span><strong>Сдача</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>Ничья</span><strong>Решение комиссии</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Поражение</span><strong>Пересдача</strong></li>
+            </ul>          </div>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">ТЕОР</span>
+            <h4 class="exam-block__title">Теория</h4>
+          </header>
+          <p class="exam-block__time">1 минута на ответ</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Правильно ответить на вопросы по категориям: общие правила полиции, регламент SWAT, процессуальный кодекс.</p>
+            <ul class="exam-list">
+              <li>На каждую категорию — по 2 вопроса</li>
+              <li>Итоговая оценка зависит от правильности ответов</li>
+              <li>При неправильном ответе задаётся дополнительный вопрос</li>
+              <li>Опоздание / неправильный ответ — экзаменатор суммирует</li>
+            </ul>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">ПМП</span>
+            <h4 class="exam-block__title">Первая медицинская помощь</h4>
+          </header>
+          <p class="exam-block__time">Время не ограничено</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Оказать первую медицинскую помощь условно раненому экзаменатору.</p>
+            <ul class="exam-list exam-list--allowed">
+              <li>Разрешено ознакомиться с информацией (регламент → полезные ссылки → ПМП/Разм)</li>
+              <li>Разрешается консультация от экзаменатора перед сдачей экзамена</li>
+            </ul>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Запрещается биндерство</span><strong>Пересдача</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>Нелогичные или неправильные действия</span><strong>Решение комиссии</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Если ничего не сделали</span><strong>Пересдача</strong></li>
+            </ul>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">EOD</span>
+            <h4 class="exam-block__title">Разминирование</h4>
+          </header>
+          <p class="exam-block__time">5 минут</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Обезвредить взрывное устройство указанного типа. Тип устройства определяет экзаменатор.</p>
+            <ul class="exam-list exam-list--allowed">
+              <li>Разрешается консультация от экзаменатора перед сдачей экзамена</li>
+            </ul>
+            <ul class="exam-list exam-list--ban">
+              <li>Запрещается биндерство</li>
+            </ul>
+            <ul class="exam-criteria">
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Запрещается биндерство</span><strong>Пересдача</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--review"><span>Нелогичные или неправильные действия</span><strong>Решение комиссии (на пересдачу)</strong></li>
+              <li class="exam-criteria__item exam-criteria__item--fail"><span>Если ничего не сделали</span><strong>Пересдача</strong></li>
+            </ul>        </article>
+        <article class="exam-block">
+          <header class="exam-block__header">
+            <span class="exam-block__tag">FINAL</span>
+            <h4 class="exam-block__title">Итоговая аттестация</h4>
+          </header>
+          <p class="exam-block__time">Выезд — 7 мин · Оцепление — 5 мин</p>
+          <p class="exam-block__task"><strong>Задача:</strong> Своевременная реакция на вызов диспетчера 9-1-1. Экзаменатор выбирает сценарий (например, ограбление МО). Стажёр должен быстро отреагировать, собрать департамент на месте, оцепить территорию и при необходимости произвести штурм здания.</p>
+            <ul class="exam-list">
+              <li>Время на выезд до точки вызова — 7 минут</li>
+              <li>Время на оцепление территории — 5 минут</li>
+            </ul>        </article>
+          <div class="internship-program__note">
+            <strong>Примечание:</strong> окончательный результат суммируется с учётом решения комиссии.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Arsenal -->
+  <section class="section section--dark" id="arsenal">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">ARSENAL</span>
+        <h2 class="section__title">Сапёрный набор и инструменты</h2>
+        <p class="section__desc">Инструменты для разминирования — из регламента SWAT / РБ</p>
+      </div>
+      <div class="cards-grid cards-grid--3">
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">🔧</div>
+          <div class="card__body">
+            <h3 class="card__name">Отвертка</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Откручивание болтов на корпусе взрывчатки, разборка механизма и другие винтовые работы.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">⚡</div>
+          <div class="card__body">
+            <h3 class="card__name">Индикаторная отвертка</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Определение фазы в проводе, поиск сигнала от провода к детонатору.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">✂️</div>
+          <div class="card__body">
+            <h3 class="card__name">Кусачки</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Перерезание проводов и мелких механизмов взрывчатого устройства.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">📦</div>
+          <div class="card__body">
+            <h3 class="card__name">Изолента</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Изоляция оголённых проводов, соединение разорванных жил.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">🔩</div>
+          <div class="card__body">
+            <h3 class="card__name">Ножницы по металлу</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Перерезание крупных связок проводов, листового металла, защитных экранов бомб.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">📡</div>
+          <div class="card__body">
+            <h3 class="card__name">Глушилка связи</h3>
+            <span class="card__caliber">Радиус 500 м</span>
+            <p class="card__desc">Подавление радиосигналов и радиочастот — обязательна при ВУ с телефоном или дистанционным управлением.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">🪝</div>
+          <div class="card__body">
+            <h3 class="card__name">Кошка для сдергивания мин</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Сдергивание мин из песка, земли и других материалов.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">⛏</div>
+          <div class="card__body">
+            <h3 class="card__name">Сапёрная лопатка</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Раскопка ям на полигоне, расчистка земли вокруг мин и растяжек.</p>
+          </div>
+        </article>
+        <article class="card card--weapon">
+          <div class="card__weapon-icon">🔐</div>
+          <div class="card__body">
+            <h3 class="card__name">Дешифратор</h3>
+            <span class="card__caliber">Сапёрный набор</span>
+            <p class="card__desc">Расшифровка кода бомбы с кодовой панелью для деактивации устройства.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Handbook -->
+  <section class="section" id="handbook">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">HANDBOOK</span>
+        <h2 class="section__title">Справочник сапёра</h2>
+        <p class="section__desc">Типы СВУ, арсенал и готовые отыгровки для разминирования</p>
+      </div>
+
+      <article class="handbook-base">
+        <h3 class="handbook-base__title">🎒 Базовый набор в сумке сапёра</h3>
+        <p class="handbook-base__desc">Отыгровки для <code>/do</code> при осмотре экипировки:</p>
+        <pre class="roleplay-code">/do В правой руке тяжелый металлический кейс с инструментами сапера.
+/do Внутри кейса: диэлектрические кусачки, набор отверток, мультиметр, баллончик с жидким азотом...
+/do ...портативная глушилка связи, досмотровое зеркальце, изолента и портативный рентген-сканер.
+/do На оперативнике надет тяжелый взрывозащитный костюм "EOD Suit". (Можно использовать скин Juggernaut, если позволяет сервер).</pre>
+      </article>
+
+      <div class="handbook-list">
+
+        <article class="handbook-entry">
+          <header class="handbook-entry__header">
+            <span class="handbook-entry__num">01</span>
+            <h3 class="handbook-entry__title">Дистанционная бомба <span>(Радиоуправляемая)</span></h3>
+          </header>
+          <div class="handbook-entry__block handbook-entry__block--danger">
+            <h4>Главная угроза</h4>
+            <p>Террорист может нажать кнопку подрыва в любой момент, пока ты работаешь.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Арсенал сапёра</h4>
+            <ul>
+              <li><strong>Широкополосный генератор помех (глушилка)</strong> — подавляет сотовую связь, радиоканалы и Wi-Fi в радиусе работы.</li>
+              <li><strong>Сканер радиочастот</strong> — для поиска антенны или спрятанного телефона-детонатора.</li>
+              <li><strong>Экранирующий пакет (клетка Фарадея)</strong> — фольгированный материал, не пропускающий сигналы.</li>
+            </ul>
+          </div>
+          <div class="handbook-entry__block handbook-entry__block--ref">
+            <h4>Справочник</h4>
+            <p>Перед работой включи глушилку и подтверди отсутствие связи в зоне. Найди приёмник сканером, отсоедини антенну диэлектрическими кусачками, изолируй приёмник в экранирующем пакете. Не снимай глушилку до полной изоляции детонатора.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Пример RP-разминирования</h4>
+            <pre class="roleplay-code">/do В руках оперативника кейс сапера.
+/me открыл кейс, достал генератор помех и нажал на тумблер включения
+/do В радиусе 20 метров полностью заглушены все радиосигналы и сотовая связь.
+/me достал сканер частот, провел им над бомбой и обнаружил радиоприемник
+/me диэлектрическими кусачками аккуратно отсоединил провода антенны от платы
+/me поместил приемник в экранирующий пакет и плотно его закрыл
+/try успешно обезвредил дистанционный детонатор</pre>
+          </div>
+        </article>
+
+        <article class="handbook-entry">
+          <header class="handbook-entry__header">
+            <span class="handbook-entry__num">02</span>
+            <h3 class="handbook-entry__title">Часовая бомба <span>(С таймером)</span></h3>
+          </header>
+          <div class="handbook-entry__block handbook-entry__block--danger">
+            <h4>Главная угроза</h4>
+            <p>Истечение времени на таймере или провода-обманки, которые ускорят таймер при перерезании.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Арсенал сапёра</h4>
+            <ul>
+              <li><strong>Криогенный спрей (жидкий азот)</strong> — заморозка батареи; на холоде реакция останавливается, напряжение падает.</li>
+              <li><strong>Мультиметр</strong> — замер напряжения в проводах, поиск нулевого провода.</li>
+              <li><strong>Шунтирующие зажимы (перемычки)</strong> — обходной путь тока, чтобы таймер не понял, что провод перерезан.</li>
+            </ul>
+          </div>
+          <div class="handbook-entry__block handbook-entry__block--ref">
+            <h4>Справочник</h4>
+            <p>Заморозь элементы питания азотом для выигрыша времени. Мультиметром определи питающий провод. Установи шунт параллельно цепи до перерезания — только после фиксации зажимов режь провод между ними. Любое перерезание без шунта может запустить обманку.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Пример RP-разминирования</h4>
+            <pre class="roleplay-code">/me достал из кейса криогенный баллон и распылил жидкий азот на элементы питания
+/do Батарея мгновенно покрылась инеем, подача тока на таймер критически снизилась.
+/me взял мультиметр и аккуратно замерил напряжение на красном и синем проводах
+/do Мультиметр показал, что красный провод является питающим.
+/me закрепил шунтирующие зажимы в обход красного провода, создав запасную цепь
+/me диэлектрическими кусачками перекусил красный провод между зажимами
+/try успешно обесточил таймер без детонации</pre>
+          </div>
+        </article>
+
+        <article class="handbook-entry">
+          <header class="handbook-entry__header">
+            <span class="handbook-entry__num">03</span>
+            <h3 class="handbook-entry__title">Вибрационная бомба <span>(Реагирует на движение / наклон)</span></h3>
+          </header>
+          <div class="handbook-entry__block handbook-entry__block--danger">
+            <h4>Главная угроза</h4>
+            <p>Самый опасный вид СВУ. Внутри — ртутный замыкатель или пружинный маятник. Любое движение, дрожь рук или сдвиг бомбы замкнёт цепь.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Арсенал сапёра</h4>
+            <ul>
+              <li><strong>Быстротвердеющая полиуретановая пена</strong> — фиксирует ртуть или маятник, не давая контактам соприкоснуться.</li>
+              <li><strong>Медицинский шприц</strong> — точечное введение клея или пены в мелкие детали.</li>
+              <li><strong>Струбцины и гироскопический фиксатор</strong> — жёсткая фиксация бомбы к поверхности.</li>
+            </ul>
+          </div>
+          <div class="handbook-entry__block handbook-entry__block--ref">
+            <h4>Справочник</h4>
+            <p>Сначала жёстко зафиксируй корпус струбцинами — никаких сдвигов. Заполни датчик пеной плавно, дождись застывания. Только после блокировки механизма отключай контакты датчета от цепи. Работай медленно, без рывков; дрожь рук — прямой риск детонации.</p>
+          </div>
+          <div class="handbook-entry__block">
+            <h4>Пример RP-разминирования</h4>
+            <pre class="roleplay-code">/me достал струбцины и жестко зафиксировал корпус бомбы на поверхности, исключив ее сдвиг
+/me взял баллон с быстротвердеющей пеной и вставил тонкую трубку в корпус ртутного датчика
+/do Оперативник плавно заполнил датчик пеной, полностью обездвижив ртутную каплю внутри.
+/do Пена застыла, заблокировав вибрационный механизм.
+/me достал диэлектрическую отвертку, открутил контакты датчика и снял его с корпуса
+/try успешно отключил вибрационный замыкатель от основной цепи питания</pre>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section section--dark" id="news">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">INTEL BRIEF</span>
+        <h2 class="section__title">Новости и пресс-релизы</h2>
+      </div>
+      <div class="cards-grid cards-grid--3">
+        <article class="card card--news">
+          <span class="card__date">29.06.2026</span>
+          <h3 class="card__name">Успешная операция «NEON SHADOW»</h3>
+          <p class="card__desc">Подразделение SWAT нейтрализовало вооружённую группу на Strip. Заложники освобождены без потерь.</p>
+          <a href="#" class="card__link">Читать →</a>
+        </article>
+        <article class="card card--news">
+          <span class="card__date">15.06.2026</span>
+          <h3 class="card__name">Набор в <span class="neon-swat">SWAT</span> Academy 2026</h3>
+          <p class="card__desc">Открыт приём заявок для офицеров LVPD. Требования: 3+ года в ПД, физ. нормативы, рекомендация командира.</p>
+          <a href="#academy" class="card__link">Подать заявку →</a>
+        </article>
+        <article class="card card--news">
+          <span class="card__date">01.06.2026</span>
+          <h3 class="card__name">Обновление тактического мануала v3.2</h3>
+          <p class="card__desc">Новые протоколы Use of Force и схемы штурма многоэтажных зданий. Обязательно к изучению.</p>
+          <a href="#manual" class="card__link">Мануал →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ten Codes -->
+  <section class="section" id="codes">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">RADIO CODES</span>
+        <h2 class="section__title">Тен-коды и ситуационные коды</h2>
+        <p class="section__desc">Справочник радиообмена подразделения</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Код</th>
+              <th>Значение</th>
+              <th>Описание ситуации</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>10-4</code></td><td>Сообщение принято</td><td>Подтверждение любой полученной информации.</td></tr>
+            <tr><td><code>10-20</code></td><td>Местоположение</td><td>Запрос или передача текущих координат.</td></tr>
+            <tr><td><code>10-66</code></td><td>Traffic-stop Increased Risk</td><td>Остановка транспорта повышенного риска: вооружённые, в розыске, после погони.</td></tr>
+            <tr><td><code>10-33</code></td><td>Экстренная ситуация</td><td>Только экстренный трафик на канале.</td></tr>
+            <tr><td><code>CODE 0</code></td><td>Офицер на земле</td><td>Экстренная ситуация — немедленная помощь всех свободных юнитов.</td></tr>
+            <tr><td><code>CODE 4</code></td><td>Ситуация урегулирована</td><td>Дополнительное подкрепление не требуется.</td></tr>
+            <tr><td><code>/r [SWAT]</code></td><td>Принятие вызова</td><td>«Принято. Работаем!»</td></tr>
+            <tr><td><code>/d LVa</code></td><td>Заезд на территорию</td><td>«Заехали на ваши пески, чёрный маячок» — при въезде на территорию LVa.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranks -->
+  <section class="section section--dark" id="ranks">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">RANK SYSTEM</span>
+        <h2 class="section__title">Система званий и повышений</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Звание</th>
+              <th>Уровень</th>
+              <th>Критерии повышения</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Стажёр (Probationary)</td><td>1</td><td>Зачисление в Academy, базовый курс 8 недель</td></tr>
+            <tr><td>Офицер (Officer)</td><td>2</td><td>Сдача всех нормативов, 20+ тренировок, рекомендация инструктора</td></tr>
+            <tr><td>Старший офицер (Senior Officer)</td><td>3</td><td>50+ операций, специализация (снайпер/штурм/EOD), экзамен</td></tr>
+            <tr><td>Сержант (Sergeant)</td><td>4</td><td>Лидерство, 100+ тренировок, тактический экзамен, голосование команды</td></tr>
+            <tr><td>Лейтенант (Lieutenant)</td><td>5</td><td>Зам. командира, 2+ года в SWAT, курс командования</td></tr>
+            <tr><td>Капитан (Captain)</td><td>6</td><td>Командир подразделения, назначение Chief of Police</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">SCHEDULE</span>
+        <h2 class="section__title">График тренировок</h2>
+        <p class="section__desc">Расписание на текущую неделю</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>День</th>
+              <th>Время</th>
+              <th>Тема</th>
+              <th>Инструктор</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Понедельник</td><td>08:00–12:00</td><td>Обыск авто и здания</td><td>Инструктор EOD</td></tr>
+            <tr><td>Вторник</td><td>09:00–13:00</td><td>Траффик-стоп 10-66</td><td>Супервайзер патруля</td></tr>
+            <tr><td>Среда</td><td>08:00–11:00</td><td>Переговоры / заложники</td><td>Переговорщик</td></tr>
+            <tr><td>Четверг</td><td>10:00–14:00</td><td>Разминирование (РБ)</td><td>Сапёр</td></tr>
+            <tr><td>Пятница</td><td>08:00–16:00</td><td>Штурм помещений (CQB)</td><td>Командир группы</td></tr>
+            <tr><td>Суббота</td><td>07:00–12:00</td><td>Полигон — уничтожение ВВ</td><td>EOD-команда</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SWAT Manual Quick -->
+  <section class="section section--accent" id="quick-manual">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">QUICK REFERENCE</span>
+        <h2 class="section__title">Мануал <span class="neon-swat">SWAT</span> — краткая версия</h2>
+        <p class="section__desc">Как проводить операцию: пошаговый алгоритм для видео/стрима</p>
+      </div>
+      <div class="quick-manual">
+        <div class="quick-manual__steps">
+          <div class="step">
+            <span class="step__num">01</span>
+            <div class="step__content">
+              <h4>Окружение</h4>
+              <p>Первый прибывший боец — красный офицер (или старший по должности). Окружите место инцидента, соберите информацию о планировке.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">02</span>
+            <div class="step__content">
+              <h4>Разведка</h4>
+              <p>Оценка ландшафта, числа стрелков и огневой мощи. При заложниках — переговоры (форма №303, без оружия).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">03</span>
+            <div class="step__content">
+              <h4>Предупреждения</h4>
+              <p>Без заложников — 2 предупреждения перед штурмом. С заложниками — до 3 предупреждений. Цель — сохранить максимум жизней.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">04</span>
+            <div class="step__content">
+              <h4>Штурм</h4>
+              <p>BearCat → щиты в голове колонны → flashbang/газ → зачистка («Крючок», «Крест», «Угол»). Тараны, дробовики, взрывпакеты — по тактике.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">05</span>
+            <div class="step__content">
+              <h4>Завершение</h4>
+              <p>Заложников — парамедикам/патрульным. CODE 4. При аресте высокой опасности — обыск авто, эвакуатор на стоянку.</p>
+            </div>
+          </div>
+        </div>
+        <div class="quick-manual__force">
+          <h4>Классы заложников</h4>
+          <ul class="force-list">
+            <li><span class="force-level force-level--1">1</span> Бытовая — семья, разочарование</li>
+            <li><span class="force-level force-level--2">2</span> Психопат — резонанс, ощущения</li>
+            <li><span class="force-level force-level--3">3</span> Безысходность — «живой щит» при побеге</li>
+            <li><span class="force-level force-level--4">4</span> Террористы — профессионалы, полит. цели</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FBI Orders -->
+  <section class="section section--dark" id="orders">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">FBI DIRECTIVES</span>
+        <h2 class="section__title">Действующие ордера FBI для <span class="neon-swat">SWAT</span></h2>
+      </div>
+      <div class="orders-list">
+        <article class="order">
+          <div class="order__header">
+            <span class="order__id">ОРДЕР-ОБЫСК</span>
+            <span class="order__status order__status--active">ACTIVE</span>
+          </div>
+          <h3 class="order__title">Ордер на обыск здания и имущества</h3>
+          <p class="order__desc">Обыск здания проводится при согласии подозреваемого или при наличии ордера на арест и обыск имущества. Изымать только ключевые улики, оружие, документы.</p>
+          <span class="order__date">Основание: регламент SWAT</span>
+        </article>
+        <article class="order">
+          <div class="order__header">
+            <span class="order__id">ОРДЕР-АРЕСТ</span>
+            <span class="order__status order__status--active">ACTIVE</span>
+          </div>
+          <h3 class="order__title">Задержание по /wanted — /find</h3>
+          <p class="order__desc">Задержание по наводке диспетчера при федеральном розыске. Оформление протокола, помещение в КПЗ Las-Venturas до суда.</p>
+          <span class="order__date">Основание: регламент SWAT</span>
+        </article>
+        <article class="order">
+          <div class="order__header">
+            <span class="order__id">ОРДЕР-EOD</span>
+            <span class="order__status order__status--active">ACTIVE</span>
+          </div>
+          <h3 class="order__title">Ликвидация ВВ на полигоне</h3>
+          <p class="order__desc">Ликвидация любого взрывчатого вещества — исключительно на сапёрном полигоне (заброшенный аэропорт). Фугас + катушка, безопасное расстояние.</p>
+          <span class="order__date">Основание: таблица РБ SWAT</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manual with Sidebar -->
+  <section class="section" id="manual">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">MANUAL &amp; CHARTER</span>
+        <h2 class="section__title">Устав и мануал</h2>
+        <p class="section__desc">Источник: «Основные положения по работе в отряде SWAT»</p>
+      </div>
+      <div class="manual-layout">
+        <aside class="manual-sidebar">
+          <nav class="manual-nav">
+            <a href="#manual-1" class="manual-nav__link active" data-section="manual-1">§1 Обыск</a>
+            <a href="#manual-2" class="manual-nav__link" data-section="manual-2">§2 Траффик-стоп 10-66</a>
+            <a href="#manual-3" class="manual-nav__link" data-section="manual-3">§3 Действия штурма</a>
+            <a href="#manual-4" class="manual-nav__link" data-section="manual-4">§4 Заложники</a>
+            <a href="#manual-5" class="manual-nav__link" data-section="manual-5">§5 Переговоры</a>
+            <a href="#manual-6" class="manual-nav__link" data-section="manual-6">§6 Штурм помещений</a>
+            <a href="#manual-7" class="manual-nav__link" data-section="manual-7">§7 Разминирование</a>
+          </nav>
+
+        </aside>
+        <div class="manual-content">
+          <article class="manual-section active" id="manual-1">
+            <h3>§1 Обыск</h3>
+            <p><strong>Обыск автомобиля:</strong> при аресте высокой опасности обязателен. Осмотрите салон фонариком, проверьте под сиденьями, торпедой, под капотом и в багажнике. Изымайте только ключевые улики. После обыска — эвакуатор на спецстоянку.</p>
+            <p><strong>Обыск здания:</strong> при согласии подозреваемого или при ордере на арест и обыск. Будьте на чеку при входе в каждую комнату. Снимайте картины, проверяйте стены (глухой звук — возможная ниша). Изымайте улики, оружие, документы.</p>
+          </article>
+          <article class="manual-section" id="manual-2">
+            <h3>§2 Траффик-стоп повышенного риска (10-66)</h3>
+            <p>Остановка транспорта с особо опасными преступниками: вооружённое нападение, розыск, погоня.</p>
+            <ul>
+              <li>Дистанция до авто подозреваемого: 5–10 м; крузеры в шахматном порядке ЗА машиной.</li>
+              <li>Исключить перекрёстный огонь; патрульные в авто до приказа супервайзера.</li>
+              <li>Приказы — один человек (обычно пассажир ведущего крузера).</li>
+              <li>Руки вверх → заглушить двигатель → ключи в окно → выход спиной → «спешиться» → задержание высокой опасности.</li>
+              <li>Обыск авто — только после задержания всех подозреваемых.</li>
+            </ul>
+          </article>
+          <article class="manual-section" id="manual-3">
+            <h3>§3 Действия штурма</h3>
+            <p>Первый прибывший — красный офицер. Окружение → разведка → штурм.</p>
+            <ul>
+              <li>Подход под BearCat; забаррикадированная дверь — таран BearCat.</li>
+              <li>Щиты — в начале штурмовой группы.</li>
+              <li>Без заложников: 2 предупреждения, те же действия без переговоров.</li>
+              <li>Tactical: тараны, дробовики со взламывающими зарядами, взрывпакеты, газ, flashbang, щиты.</li>
+            </ul>
+          </article>
+          <article class="manual-section" id="manual-4">
+            <h3>§4 Ситуации с заложниками</h3>
+            <p>Цель — сохранение максимального количества жизней. Классификации:</p>
+            <ul>
+              <li><strong>Бытовая</strong> — член семьи удерживает родных.</li>
+              <li><strong>Психопат</strong> — резонанс, острые ощущения.</li>
+              <li><strong>Безысходность</strong> — «живой щит» при побеге после задержания.</li>
+              <li><strong>Террористы</strong> — профессионалы, политические цели; самая опасная категория.</li>
+            </ul>
+            <p>До 3 предупреждений. При штурме — ликвидация стрелка; иногда допустимо касательное поражение через заложника (не жизненно важная зона).</p>
+          </article>
+          <article class="manual-section" id="manual-5">
+            <h3>§5 Переговоры</h3>
+            <p>Переговорщик — обычная одежда + бронежилет (форма №303), без оружия.</p>
+            <ul>
+              <li>Оценить вооружение и возможности террориста(ов).</li>
+              <li>Осмотреть здание, место угрозы, подходы, заряды ВВ.</li>
+              <li>При запросе транспорта — GPS-жучок, по возможности мало бензина.</li>
+              <li>После отдачи заложников и отъезда — преследование в unmarked (ЛТС), проверка на бомбу, задержание.</li>
+            </ul>
+          </article>
+          <article class="manual-section" id="manual-6">
+            <h3>§6 Способы штурма помещений</h3>
+            <ul>
+              <li><strong>Крючок</strong> — по обе стороны двери, flashbang, заход по стенам.</li>
+              <li><strong>Крест</strong> — крестом по направлению стволов.</li>
+              <li><strong>Угол</strong> — одна сторона входа, растекание по стенам (2 варианта).</li>
+              <li><strong>Диагональ</strong> — вдоль одной стены с полным обзором.</li>
+              <li><strong>Действия четвёрки</strong> — шеренга, спина к стене.</li>
+              <li><strong>Две комнаты</strong> — зачистка первой, flashbang, «Крючок» во вторую.</li>
+            </ul>
+          </article>
+          <article class="manual-section" id="manual-7">
+            <h3>§7 Разминирование (РБ)</h3>
+            <p><strong>ВУ с телефоном:</strong> глушилка → кусачки (вся связка) → телефон → деактивация.</p>
+            <p><strong>ВУ с дистанционным управлением:</strong> глушилка → отвертка (корпус) → кусачки (провода) → снять детонатор.</p>
+            <p><strong>ВУ с часами:</strong> корпус → индикаторная отвертка → перерезать «горящий» провод (или по температуре).</p>
+            <p><strong>ВУ с кодовой панелью:</strong> как часы + дешифратор → код деактивации.</p>
+            <p><strong>Мины, растяжки, гранаты</strong> — по регламенту таблицы РБ. Ликвидация ВВ — только на полигоне (заброшенный аэропорт).</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roleplay scripts -->
+  <section class="section section--dark" id="roleplay">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">ROLEPLAY</span>
+        <h2 class="section__title">Отыгровки для отряда</h2>
+        <p class="section__desc">Источник: «Отыгровки для отряда» — готовые команды для GTOOLS / биндера</p>
+      </div>
+      <div class="roleplay-grid">
+        <article class="roleplay-card">
+          <h3>При принятии вызова</h3>
+          <pre class="roleplay-code">/r [SWAT]: Принято. Работаем!</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Заезд на территорию LVa</h3>
+          <pre class="roleplay-code">/d LVa, заехали на ваши пески, черный маячок</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Предъявление удостоверения</h3>
+          <pre class="roleplay-code">Приветствую, сотрудник города Las-Venturas.
+{wait:3000}
+/do На бронежилете закреплен значок: "S.W.A.T, {myid}-1-0"</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Оцепление AMMO (мегафон)</h3>
+          <pre class="roleplay-code">/m Внимание! Данная территория оцеплена! При пересечении территории вы будете задержаны!</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Составление протокола</h3>
+          <pre class="roleplay-code">/me пристегнул наручники гражданина к столу
+{wait:4000}
+/do На столе стоит "Планшет БД граждан для оформления протокола"
+{wait:6000}
+/me взял планшет и начал заполнять протокол на имя "{trgRpnick}"
+{wait:7000}
+/me закончил заполнять протокол, после чего повернул экран в сторону гражданина
+{wait:5000}
+/todo Подпишите протокол*указывая место электронной подписи на планшете.</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Задержание /wanted (в машине)</h3>
+          <pre class="roleplay-code">/me легким движением руки достал ориентировку из бардачка автомобиля.
+{wait:4000}
+/todo Итак..*держа в руках ориентировку на имя задержанного.
+{wait:4000}
+Вы находитесь в федеральном розыске и были пойманы по наводке диспетчера.
+{wait:4000}
+За хорошее поведение ваши обвинения не будут отягчающими и мы пойдем вам на встречу.
+{wait:4000}
+Просим вас молчать и не поддаваться эмоциям, неадекватное поведение только ухудшит вашу ситуацию.
+{wait:4000}
+Вы нарушили много статей УК штата и должны ответить за свои поступки перед законом.</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Арест (GTOOLS → Отыгровки → Арест)</h3>
+          <pre class="roleplay-code">/takekeys work
+{wait:2000}
+Вы были задержаны сотрудником спец. отдела S.W.A.T.
+{wait:6000}
+До суда вы будете помещены в КПЗ города Las-Venturas.
+{wait:3000}
+/me достал ключи от КПЗ, после чего открыл его и затолкал преступника.
+{wait:1300}
+{command}</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Скрытие личности (подшлемник)</h3>
+          <pre class="roleplay-code">/me спустил подшлемник на лицо.
+{wait:4000}
+/do Личность не опознать, на лице балаклава и подшлемник.
+
+/clist32 — /me опустил подшлемник закрыв лицо
+/clist33 — /me поднял подшлемник открыв лицо</pre>
+        </article>
+        <article class="roleplay-card">
+          <h3>Личное авто (маскировка)</h3>
+          <pre class="roleplay-code">/me закрыл окна автомобиля.
+{wait:4000}
+/do Окна крузера плотно закрыты, на офицерах подшлемники, личности не опознать.</pre>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academy Form -->
+  <section class="section section--dark" id="academy">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="section__tag"><span class="neon-swat">SWAT</span> ACADEMY</span>
+        <h2 class="section__title">Заявка на вступление</h2>
+        <p class="section__desc">Электронная форма для кандидатов LVPD</p>
+      </div>
+      <form class="form" id="academyForm">
+        <div class="form__group">
+          <label for="callsign">Имя / Позывной</label>
+          <input type="text" id="callsign" name="callsign" required placeholder="Officer J. Smith">
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="age">Возраст</label>
+            <input type="number" id="age" name="age" min="21" max="55" required placeholder="28">
+          </div>
+          <div class="form__group">
+            <label for="experience">Опыт в ПД (лет)</label>
+            <input type="number" id="experience" name="experience" min="1" required placeholder="5">
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="motivation">Почему хотите именно в SWAT?</label>
+          <textarea id="motivation" name="motivation" rows="5" required placeholder="Опишите мотивацию, навыки и готовность..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Internal Affairs -->
+  <section class="section" id="complaints">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="section__tag">INTERNAL AFFAIRS</span>
+        <h2 class="section__title">Жалобы на сотрудников</h2>
+        <p class="section__desc">Форма обратной связи для внутренней безопасности. Все обращения конфиденциальны.</p>
+      </div>
+      <form class="form form--complaint" id="complaintForm">
+        <div class="form__group">
+          <label for="complaintTarget">Сотрудник (позывной / имя)</label>
+          <input type="text" id="complaintTarget" name="target" required placeholder="Officer / Sgt. ...">
+        </div>
+        <div class="form__group">
+          <label for="complaintDate">Дата инцидента</label>
+          <input type="date" id="complaintDate" name="date" required>
+        </div>
+        <div class="form__group">
+          <label for="complaintDesc">Описание (превышение полномочий, нарушение устава)</label>
+          <textarea id="complaintDesc" name="description" rows="6" required placeholder="Подробное описание ситуации..."></textarea>
+        </div>
+        <div class="form__group">
+          <label for="complaintAnon">
+            <input type="checkbox" id="complaintAnon" name="anonymous"> Подать анонимно
+          </label>
+        </div>
+        <button type="submit" class="btn btn--outline btn--full">Отправить жалобу</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo-badge neon-swat">SWAT</span>
+          <span>LVPD Tactical Operations</span>
+        </div>
+        <p class="footer__copy">© 2026 Las Vegas Police Department. Набросок проекта.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

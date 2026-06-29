@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Dependencies / build
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Local env
+.env
+.env.*
+
+# Large media (add hero-bg.mp4 manually or via Git LFS if needed)
+assets/video/*.mp4
