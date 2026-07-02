@@ -75,7 +75,33 @@
     });
   });
 
-  // Form submissions (demo)
+  // Form submissions
+  async function submitForm(endpoint, payload) {
+    const base = window.SWAT_API_BASE || window.location.origin;
+    const response = await fetch(`${base}${endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+
+    let data = {};
+    try {
+      data = await response.json();
+    } catch (_) {
+      data = {};
+    }
+
+    if (!response.ok) {
+      const detail = data.detail;
+      const message = Array.isArray(detail)
+        ? detail.map((item) => item.msg).join(', ')
+        : detail || 'Не удалось отправить форму. Проверьте подключение к серверу.';
+      throw new Error(message);
+    }
+
+    return data;
+  }
+
   function showToast(message) {
     const existing = document.querySelector('.toast');
     if (existing) existing.remove();
@@ -95,19 +121,51 @@
 
   const academyForm = document.getElementById('academyForm');
   if (academyForm) {
-    academyForm.addEventListener('submit', (e) => {
+    academyForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      showToast('✓ Заявка отправлена. Ожидайте ответа от SWAT Academy.');
-      academyForm.reset();
+      const submitBtn = academyForm.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(academyForm);
+        const data = await submitForm('/api/academy', {
+          callsign: formData.get('callsign'),
+          age: Number(formData.get('age')),
+          experience: Number(formData.get('experience')),
+          motivation: formData.get('motivation'),
+        });
+        showToast(`✓ ${data.message || 'Заявка отправлена. Ожидайте ответа от SWAT Academy.'}`);
+        academyForm.reset();
+      } catch (error) {
+        showToast(`✗ ${error.message}`);
+      } finally {
+        submitBtn.disabled = false;
+      }
     });
   }
 
   const complaintForm = document.getElementById('complaintForm');
   if (complaintForm) {
-    complaintForm.addEventListener('submit', (e) => {
+    complaintForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      showToast('✓ Жалоба зарегистрирована. Internal Affairs свяжется с вами.');
-      complaintForm.reset();
+      const submitBtn = complaintForm.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(complaintForm);
+        const data = await submitForm('/api/complaints', {
+          target: formData.get('target'),
+          date: formData.get('date'),
+          description: formData.get('description'),
+          anonymous: formData.get('anonymous') === 'on',
+        });
+        showToast(`✓ ${data.message || 'Жалоба зарегистрирована. Internal Affairs свяжется с вами.'}`);
+        complaintForm.reset();
+      } catch (error) {
+        showToast(`✗ ${error.message}`);
+      } finally {
+        submitBtn.disabled = false;
+      }
     });
   }
 
